@@ -34,7 +34,7 @@ public class DBConfiguration
 		System.out.println("Entering DataSource Bean creation method ");
 	    BasicDataSource dataSource = new BasicDataSource();
 	    dataSource.setDriverClassName("org.h2.Driver");
-	    dataSource.setUrl("jdbc:h2:tcp://localhost/~/test");
+	    dataSource.setUrl("jdbc:h2:tcp://localhost/~/Project1");
 	    dataSource.setUsername("sa");
 	    dataSource.setPassword("sa");
 	    System.out.println("DataSource bean " +dataSource);

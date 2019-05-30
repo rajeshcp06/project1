@@ -20,7 +20,7 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency><groupId>org.springframework</groupId>
+      <dependency><groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
 			<version>4.3.2.RELEASE</version>
 		</dependency>
@@ -29,89 +29,88 @@
 			<artifactId>spring-context</artifactId>
 			<version>4.3.2.RELEASE</version>
 		</dependency>
-		<dependency>
+				<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 			<version>4.3.2.RELEASE</version>
 		</dependency>
-		<dependency>
+				<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>4.3.2.RELEASE</version>
 		</dependency>
-		<dependency>
+				<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>4.0.1.Final</version>
 		</dependency>
-		<dependency>
+				<dependency>
 			<groupId>org.hibernate.javax.persistence</groupId>
 			<artifactId>hibernate-jpa-2.0-api</artifactId>
 			<version>1.0.1.Final</version>
 		</dependency>
-		<!-- h2 database -->
-		<dependency>
+				<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-			<version>1.4.197</version>
+			<version>1.4.196</version>
 		</dependency>
-		<dependency>
+		   		<dependency>
 			<groupId>commons-pool</groupId>
 			<artifactId>commons-pool</artifactId>
 			<version>1.5.4</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp database 
-			connection pooling -->
-		<dependency>
-			<groupId>commons-dbcp</groupId>
-			<artifactId>commons-dbcp</artifactId>
-			<version>1.4</version>
-			</dependency>
-			<!-- Hibernate validation -->
-			<dependency>
-			   <groupId>org.hibernate</groupId>
-			   <artifactId>hibernate-validator</artifactId>
-			   <version>4.2.0.Final</version>
-			</dependency>
-			<dependency>
-			    <groupId>javax.validation</groupId>
-			   <artifactId>validation-api</artifactId>
-			   <version>1.0.0.GA</version>
-		   </dependency>
-		   <!-- for uplodading image -->
-		   <dependency>
+		<!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
+<dependency>
+    <groupId>commons-dbcp</groupId>
+    <artifactId>commons-dbcp</artifactId>
+    <version>1.2.2</version>
+</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-validator</artifactId>
+    <version>4.1.0.Final</version>
+</dependency>
+		
+		
+		   	   <dependency>
 		        <groupId>commons-fileupload</groupId>
 			   <artifactId>commons-fileupload</artifactId>
 			   <version>1.2.2</version>
 		   </dependency>
-		   <dependency>
+		   		   <dependency>
 		       <groupId>commons-io</groupId>
 			   <artifactId>commons-io</artifactId>
 			   <version>2.4</version>
 		   </dependency>
-		   
-		   <!--  Spring security jar files -->
-        
-        <dependency>
+		           <dependency>
                 <groupId>org.springframework.security</groupId>
              	<artifactId>spring-security-core</artifactId>
         		<version>4.1.2.RELEASE</version>
         </dependency>
-         <dependency>
+                 <dependency>
         		<groupId>org.springframework.security</groupId>
         		<artifactId>spring-security-web</artifactId>
         		<version>4.1.2.RELEASE</version>
         </dependency>
-         <dependency>
+                 <dependency>
         		<groupId>org.springframework.security</groupId>
         		<artifactId>spring-security-config</artifactId>
         		<version>4.1.2.RELEASE</version>
         </dependency>
-         <dependency>
+                 <dependency>
         		<groupId>org.springframework.security</groupId>
         		<artifactId>spring-security-taglibs</artifactId>
        			 <version>4.1.2.RELEASE</version>
         </dependency>
-		   
+        
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.25</version>
+</dependency>
+        
+        
   </dependencies>
 </project>
