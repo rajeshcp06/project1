@@ -30,14 +30,15 @@ public class DBConfiguration
 //to create beans
 	
 	@Bean(name="dataSource")
-	public DataSource getDataSource() {
+	public DataSource getDataSource() 
+	{
 		System.out.println("Entering DataSource Bean creation method ");
 	    BasicDataSource dataSource = new BasicDataSource();
 	    dataSource.setDriverClassName("org.h2.Driver");
-	    dataSource.setUrl("jdbc:h2:tcp://localhost/~/Project1");
+	    dataSource.setUrl("jdbc:h2:tcp://localhost/~/Project2");
 	    dataSource.setUsername("sa");
 	    dataSource.setPassword("sa");
-	    System.out.println("DataSource bean " +dataSource);
+	    System.out.println("DataSource bean" +dataSource);
 	    return dataSource;
 	}
 	/*
@@ -45,7 +46,8 @@ public class DBConfiguration
 	 * <property name="dataSource" ref="dataSource">
 	 */
 	@Bean //SessionFactory - factory of session objects
-	public SessionFactory sessionFactory() {
+	public SessionFactory sessionFactory() 
+	{
 		System.out.println("Entering sessionFactory creation method");
 		LocalSessionFactoryBuilder lsf=new LocalSessionFactoryBuilder(getDataSource());
 		Properties hibernateProperties=new Properties();
@@ -61,7 +63,8 @@ public class DBConfiguration
 	    return lsf.addAnnotatedClasses(classes).buildSessionFactory();
 	}
 	@Bean
-	public HibernateTransactionManager hibTransManagement(){
+	public HibernateTransactionManager hibTransManagement()
+	{
 		return new HibernateTransactionManager(sessionFactory());
 	}
 }

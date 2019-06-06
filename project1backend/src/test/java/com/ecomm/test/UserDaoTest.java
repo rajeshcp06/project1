@@ -24,14 +24,14 @@ class UserDaoTest {
 			userDao = (UserDaoTest) context.getBean("userDao");
 		}
 		
-		@Ignore
+		
 		@Test
 		public void registerUserTest()
 		{
 			UserDetail user = new UserDetail();
-			user.setUsername("Nandhakumar");
-			user.setPassword("vishalbond");
-			user.setCustomerName("EV");
+			user.setUsername("RAJESH");
+			user.setPassword("RAJlolo@12");
+			user.setCustomerName("raj");
 			user.setRole("Admin");
 			user.setEnable(true);
 			 user.setAddress11("Chennai");
@@ -52,8 +52,8 @@ class UserDaoTest {
 		@Test
 		public void updateUserTest()
 		{
-			UserDetails user = userDao.getUser("Nandhakumar");
-		    ((UserDetail) user).setPassword("vishalbond");
+			UserDetails user = userDao.getUser("RAJESH");
+		    ((UserDetail) user).setPassword("RAJlolo@12");
 			
 			assertTrue("problem in updating user", userDao.updateUser(user));
 			
