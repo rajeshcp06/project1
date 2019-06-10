@@ -11,6 +11,7 @@ public class Authorities {//Authorization
 	@GeneratedValue(strategy=GenerationType.AUTO)
 private int id;
 private String role;//values are ROLE_USER or ROLE_ADMIN
+
 @OneToOne
 private User user;
 public int getId() {

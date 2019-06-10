@@ -87,7 +87,7 @@ $(document).ready(function(){
 
 
 <hr>
-<b>Billing Address</b><br>
+<b>Address</b><br>
 
 <form:label path="billingaddress.apartmentnumber">Enter Apartmentnumber</form:label>
 <form:input path="billingaddress.apartmentnumber" id="billingaddress.apartmentnumber"/>
@@ -107,27 +107,8 @@ $(document).ready(function(){
 <form:label path="billingaddress.zipcode">Enter Zipcode</form:label>
 <form:input path="billingaddress.zipcode" id="billingaddress.zipcode"/>
 <hr>
-<b>Shipping address</b><br>
-Check this if shipping address is same as billing address
-<input type="checkbox" onclick="fillShippingAddress(this.form)" id="shippingaddressform">
-<form:label path="shippingaddress.apartmentnumber">Enter Apartmentnumber</form:label>
-<form:input path="shippingaddress.apartmentnumber" id="shippingaddress.apartmentnumber"/>
 
-<form:label path="shippingaddress.streetname">Enter streetname</form:label>
-<form:input path="shippingaddress.streetname" id="shippingaddress.streetname"/>
 
-<form:label path="shippingaddress.city">Enter city</form:label>
-<form:input path="shippingaddress.city" id="shippingaddress.city"/>
-
-<form:label path="shippingaddress.state">Enter state</form:label>
-<form:input path="shippingaddress.state" id="shippingaddress.state"/>
-
-<form:label path="shippingaddress.country">Enter country</form:label>
-<form:input path="shippingaddress.country" id="shippingaddress.country"/>
-
-<form:label path="shippingaddress.zipcode">Enter zipcode</form:label>
-<form:input path="shippingaddress.zipcode" id="shippingaddress.zipcode"/>
-<br>
 <input type="submit" value="Register" style="background-color:maroon;">
 
 </form:form>

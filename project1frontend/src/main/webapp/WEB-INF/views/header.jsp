@@ -21,14 +21,14 @@
 
 
     <link href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" rel="stylesheet">
-<title>Insert title here</title>
+<title>ford cars</title>
 
 </head>
 <body>
 	<div class="container">
 		<nav class="navbar navbar-default" id="nav_bar">
 			<div class="navbar-header">
-				<a href="" class="navbar-brand"><img src="<c:url value='/resources/images/simple img.jpg'></c:url>" alt="NIIT" height="30px" width="70px"></a>
+				<a href="" class="navbar-brand"><img src="<c:url value='/resources/images/logo.jpg'></c:url>" alt="NIIT" height="30px" width="70px"></a>
 			<button type="button" class="navbar-toggle collapsed" 
    data-toggle="collapse" data-target="#navbardemo" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -41,7 +41,7 @@
 			<ul class="nav navbar-nav">
 				<li><a href='<c:url value='/home'></c:url>' class="fontSize">Home</a></li>
 				<li><a href="<c:url value='/aboutus'></c:url>" >About Us</a></li>
-				<li><a href="<c:url value='/all/getallproducts'></c:url>">Browse all products</a>
+				<li><a href="<c:url value='/all/getallproducts'></c:url>">ford cars </a>
 				<li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown">Select By Category<span class="caret"></span></a>
@@ -63,7 +63,7 @@
 				</security:authorize>    
 			   
 			   <security:authorize access="hasRole('ROLE_USER')">
-			   <li><a href="<c:url value='/cart/getcart'></c:url>"><span class="glyphicon glyphicon-shopping-cart"></span>(${cartSize})</a></li>
+			   <li><a href="<c:url value='/cart/getcart'></c:url>">Cart<span class="glyphicon glyphicon-shopping-cart"></span>(${cartSize})</a></li>
 			   </security:authorize>
 			   
 			   <c:if test="${pageContext.request.userPrincipal.name==null }">

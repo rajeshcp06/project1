@@ -17,11 +17,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.niit.dao.CartItemDao;
 import com.niit.dao.ProductDao;
+import com.niit.models.BillingAddress;
 import com.niit.models.CartItem;
 import com.niit.models.Customer;
 import com.niit.models.CustomerOrder;
 import com.niit.models.Product;
-import com.niit.models.ShippingAddress;
+
 import com.niit.models.User;
 
 @Controller
@@ -92,19 +93,19 @@ private CartItemDao cartItemDao;
     	String email=principal.getName();
     	User user=cartItemDao.getUser(email);
     	Customer customer=user.getCustomer();
-    	ShippingAddress shippingAddress=customer.getShippingaddress();
-    	model.addAttribute("shippingaddress",shippingAddress);
+    	BillingAddress billingAddress=customer.getBillingaddress();
+    	model.addAttribute("billingaddress",billingAddress);
     	return "shippingaddress";
     }
     @RequestMapping(value="/cart/createorder")
-    public String createCustomerOrder(@ModelAttribute ShippingAddress shippingaddress,
+    public String createCustomerOrder(@ModelAttribute BillingAddress billingaddress,
     		Model model,
     		@AuthenticationPrincipal Principal principal,HttpSession session){
     	String email=principal.getName();
     	User user=cartItemDao.getUser(email);
     	
     	Customer customer=user.getCustomer();
-    	customer.setShippingaddress(shippingaddress);//customer.shippingaddress -> updated shippingaddress obj
+    	customer.setBillingaddress(billingaddress);//customer.billingaddress -> updated billingaddress obj
     	customer.setUser(user);
     	user.setCustomer(customer);//user.customer -> updated customer references
     	

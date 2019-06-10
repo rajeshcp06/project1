@@ -49,7 +49,7 @@ public String getProduct(@PathVariable int id,Model model){
 @RequestMapping(value="/admin/deleteproduct/{id}")
 public String deleteProduct(@PathVariable int id,Model model,HttpServletRequest request){
 	productDao.deleteProduct(id);
-	Path path=Paths.get(request.getServletContext().getRealPath("/")+"/WEB-INF/resources/images/"+id+".png");
+	Path path=Paths.get(request.getServletContext().getRealPath("/")+"/WEB-INF/resources/images/"+id+".	png");
 	if(Files.exists(path)){
 		try {
 			Files.delete(path);

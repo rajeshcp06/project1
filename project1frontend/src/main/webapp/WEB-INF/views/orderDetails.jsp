@@ -30,14 +30,14 @@
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <address>
-                                    <strong><button disabled>Shipping Address</button></strong><br/>
-                                        ${customerorder.user.customer.shippingaddress.apartmentnumber },
-                                   ${customerorder.user.customer.shippingaddress.streetname }
+                                    <strong><button disabled>Billing Address</button></strong><br/>
+                                        ${customerorder.user.customer.billingaddress.apartmentnumber },
+                                   ${customerorder.user.customer.billingaddress.streetname }
                                 <br/>
-                                    ${customerorder.user.customer.shippingaddress.state},
-                                     ${customerorder.user.customer.shippingaddress.city}
+                                    ${customerorder.user.customer.billingaddress.state},
+                                     ${customerorder.user.customer.billingaddress.city}
                                 <br/>
-                                   ${customerorder.user.customer.shippingaddress.zipcode}
+                                   ${customerorder.user.customer.billingaddress.zipcode}
                                 </address>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-6 text-right">
@@ -45,23 +45,10 @@
                             </div>
                         </div>
                        <hr>
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                <address>
-                                    <strong><button disabled>Billing Address</button></strong><br/>
-                                        ${customerorder.user.customer.billingaddress.apartmentnumber},
-                                        ${customerorder.user.customer.billingaddress.streetname}
-                                    <br/>
-                                        ${customerorder.user.customer.billingaddress.city}, ${customerorder.user.customer.billingaddress.state}
-                                    <br/>
-                                        ${customerorder.user.customer.billingaddress.zipcode}
-                                </address>
-                            </div>
-                        </div>
 
                         <div class="row">
-                            <table class="table table-hover" border="1">
-                                <thead>
+                            <table class="table table-hover" border="1"> 
+                               <thead>
                                     <tr>
                                         <td>Image</td>
                                         <td>Product</td>
@@ -74,9 +61,8 @@
                               
                                 <c:forEach var="cartItem" items="${cartItems}">
                                     <tr>
-                            <c:url value="/resources/images/${cartItem.product.id }.png" var="imgUrl"></c:url>
-                                        <td><img src="${imgUrl }" height="50px" width="50px">  </td>
-                                        <td class="col-md-9"><em>${cartItem.product.productname}</em></td>
+                            <c:url value="/resources/images/${cartItem.product.id}.png" var="imgUrl"></c:url>
+                                        <td><img src="${imgUrl }" height="50px" width="50px">  </td>                                 <td class="col-md-9"><em>${cartItem.product.productname}</em></td>
                                         <td class="col-md-1" style="text-align: center">${cartItem.quantity}</td>
                                         <td class="col-md-1" style="text-align: center">${cartItem.product.price}</td>
                                         <td class="col-md-1" style="text-align: center">${cartItem.totalPrice}</td>

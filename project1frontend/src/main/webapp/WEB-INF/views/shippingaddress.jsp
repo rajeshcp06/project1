@@ -29,9 +29,9 @@
 <body>
 <div class="container">
 <c:url var="url" value="/cart/createorder"></c:url>
-<form:form modelAttribute="shippingaddress" action="${url }" id="form">
+<form:form modelAttribute="billingaddress" action="${url }" id="form">
 
-<p align="center"><b>Shipping Address</b></p>	
+<p align="center"><b>Address</b></p>	
 <form:hidden path="id"/>
 
 <form:label path="apartmentnumber">Enter Apartmentnumber</form:label>

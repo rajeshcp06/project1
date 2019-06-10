@@ -5,12 +5,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
 </head>
+<title>ford car</title>
 <body>
 <div class="container">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
+            <!-- Indicators --> 
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -19,38 +19,38 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="img-circle" src="resources/images/electronics world.jpg" alt="first slide" height="100%" width="100%">
+                    <img class="img" src="resources/images/frontpage3.jpg" alt="first slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>WELCOME TO THE ELECTRONICS WORLD</h1>
-                            <p>Biringing The World Of Electronics Together</p>
+                            <h1>FAST AND FABULOUS</</h1>
+                            <p>WITH 96PS*POWER</p>
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-circle" src="resources/images/all in one world.jpg" alt="Second slide" height="100%" width="100%">
+                    <img class="img" src="resources/images/frontpage9.png" alt="Second slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>ALL IN ONE WORLD</h1>
-                            <p>Art of Invisibility</p>
+                            <h1>SAFETY FIRST</h1>
+                            <p>WITH 6 AIRBAGS</p>
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-circle" src="resources/images/laptop.jpg" alt="Third slide" height="100%" width="100%">
+                    <img class="img" src="resources/images/frontpage10.jpg" alt="Third slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>LOVE YOUR WORK, MAKE TIME RELAX TO SEE THE WORLD</h1>
-                            <p>Invention Breeds Innovation!!</p>
+                            <h1>TWO GOOD</h1>
+                            <p>WITH DUEL TONE ROOF</p>
                         </div>
                     </div>
                 </div>
                  <div class="item">
-                    <img class="img-circle" src="resources/images/imagination.jpg" alt="forth slide" height="100%" width="100%">
+                    <img class="img" src="resources/images/frontpage12.jpg" alt="forth slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>MORE U LOVE MORE U CAN BUY</h1>
-                            <p>online shopping can make your life more easier!!</p>
+                            <h1>KNOW IT ALL</h1>
+                            <p>WITH TOUCHSCREEN NAVIGATION</p>
                         </div>
                     </div>
                 </div>
