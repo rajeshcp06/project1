@@ -5,6 +5,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<style>
+.bgpro-image {
+  background-color: #ff751a;
+  height: 750px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+</style>
 <title>Insert title here</title>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -19,7 +31,7 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
-
+<div class="bgpro-image">
 	<div class="container">
 		<b>List of Products</b>
 		<table class="table table-striped" border="1">
@@ -50,7 +62,7 @@ $(document).ready(function(){
 						
 						   <a href="<c:url value='/all/getproduct/${p.id }'></c:url>">
 							<span
-								class="glyphicon glyphicon-info-sign"></span></a> 
+								class="glyphicon glyphicon-ok"></span></a> 
 				
                                 <security:authorize access="hasRole('ROLE_ADMIN')">
 								<a href="<c:url value='/admin/deleteproduct/${p.id }'></c:url>"><span
@@ -66,6 +78,7 @@ $(document).ready(function(){
 			</tbody>
 		</table>
 
+	</div>
 	</div>
 </body>
 </html>

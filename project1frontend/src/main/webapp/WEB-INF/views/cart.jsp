@@ -33,7 +33,9 @@ Clear Cart
 
 <span class="glyphicon glyphicon-remove" ></span>Remove
 </a></td>
-
+<td><a href="<c:url value='/all/getallproducts'></c:url>"class="btn btn-info btn-sm" pull-left>
+<span class="glyphicon glyphicon-ok" ></span>update
+</a></td>
 </tr>
 </c:forEach>
 </tbody>
